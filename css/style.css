@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Acme', sans-serif;
+    max-width: 100%;
 }
 
 :root {
@@ -51,6 +52,7 @@ body {
     background-color: var(--blk);
     padding: 7px;
     width: fit-content;
+    animation: rotar 2.6s infinite;
 }
 
 .bx-bdr {
@@ -58,6 +60,7 @@ body {
     height: 40px;
     width: 35px;
     border: 6px solid rgb(252, 252, 252);
+    animation: swing 2.6s infinite;
 }
 
 .bx-spot {
@@ -128,14 +131,20 @@ body {
 }
 
 .head-cont {
-    width: 100vw;
+    width: 100%;
+}
+
+.head-main
+{
     display: flex;
     justify-content: center;
     margin: 80px 0;
+    width: 100%;
 }
 
 .head-txt-cont {
     height: 65vh;
+    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -183,16 +192,14 @@ body {
 
 .underline-cont {
     display: flex;
-    width: 100vw;
     align-items: center;
     justify-content: center;
 }
 
-.skill-main {
-    width: 100vw;
+.cards{
+    width: 100%;
 }
-
-.skill-cards {
+.cards-cont{
     width: 20%;
 }
 
@@ -223,6 +230,22 @@ body {
     100% {
         top: 60%;
         left: 55%;
+    }
+}
+
+@keyframes swing {
+
+    100% {
+        rotate: -720deg ;
+
+    }
+}
+
+@keyframes rotar {
+
+    100% {
+        rotate:360deg ;
+
     }
 }
 
