@@ -6,10 +6,19 @@ body {
     max-width: 100%;
 }
 
+body::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(var(--blk), var(--whf), var(--fblk));
+}
 :root {
     --blk: rgb(0, 0, 0);
     --wh: rgb(255, 255, 255);
     --fblk: #455a64;
+    --whf: rgb(223, 211, 211);
 }
 
 .inr-main {
@@ -196,11 +205,20 @@ body {
     justify-content: center;
 }
 
-.cards{
+.cards-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
     width: 100%;
 }
 .cards-cont{
     width: 20%;
+    
+}
+.course-img
+{
+    height :200px;
+    width: 200px;
 }
 
 @keyframes move {
