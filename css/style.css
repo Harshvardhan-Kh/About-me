@@ -13,6 +13,7 @@ body::-webkit-scrollbar
 body::-webkit-scrollbar-thumb
 {
     background: linear-gradient(var(--blk), var(--whf), var(--fblk));
+    border-radius: 70px;
 }
 :root {
     --blk: rgb(0, 0, 0);
@@ -109,6 +110,9 @@ body::-webkit-scrollbar-thumb
     font-size: 18px;
     padding: 5px;
 }
+.sc-link-btn:hover {
+    scale: 1.05;
+}
 
 .sc-link-btn {
     border: none;
@@ -118,6 +122,7 @@ body::-webkit-scrollbar-thumb
     width: fit-content;
     margin-left: 20px;
     margin-top: 10px;
+    transition: 0.7s;
 }
 
 .dropdown {
@@ -166,8 +171,13 @@ body::-webkit-scrollbar-thumb
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    transition: 0.7s;
 }
 
+.head-img-cont:hover
+{
+    scale: 1.03;
+}
 .name-txt {
     font-weight: bold;
     font-size: 34px;
@@ -193,7 +203,7 @@ body::-webkit-scrollbar-thumb
     display: flex;
 }
 
-.underline {
+.unl {
     border-bottom: 2px solid var(--fblk);
     box-shadow: 0px 0px 8px 0.2px var(--blk);
     width: 90%;
@@ -204,21 +214,35 @@ body::-webkit-scrollbar-thumb
     align-items: center;
     justify-content: center;
 }
+.skills-txt{
+   
+    margin:6% 0 6% 0;
+    text-align: center;
+    font-size: 34px;
+}
 
 .cards-main{
     display: flex;
-    justify-content: center;
-    margin-top: 8%;
+    justify-content: space-evenly;
     width: 100%;
 }
 .cards-cont{
-    width: 20%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    transition: 0.7s;
+    padding: 17px 0 17px 0;
+    overflow: hidden;
+}
+.cards-cont:hover
+{
+    scale: 1.10;
 }
 .course-img
 {
-    height :200px;
-    width: 200px;
+    height :150px;
+    width: 150px;
 }
 
 @keyframes move {
