@@ -101,6 +101,10 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: var(--blk);
 }
+.link-list:hover{
+    -webkit-text-stroke: 1px var(--fblk);
+    /* background-color: var(--fblk); */
+}
 
 .list-s {
     margin: 0 2rem 0 2rem;
@@ -312,6 +316,13 @@ body::-webkit-scrollbar-thumb {
 
 .pr-btn:hover {
     transform: scale(1.06);
+}
+.contact-main {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffffc4;
+    border-radius: 50%;
 }
 
 
