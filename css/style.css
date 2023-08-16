@@ -41,6 +41,8 @@ body::-webkit-scrollbar-thumb {
     padding: 8px 0;
     width: 100vw;
     box-shadow: 0 -2px 17px -2px var(--blk);
+    position: fixed;
+    top: 0;
 }
 
 .main-cont {
@@ -280,6 +282,9 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 
 }
+.pr-img-cont {
+    margin-bottom: 15px
+}
 .pr-btn-cont
 {
     width: 100%;
@@ -294,7 +299,12 @@ body::-webkit-scrollbar-thumb {
     background-color: #455a64;
     color: aliceblue;
     font-size: 16px;
+    transition: 0.7s;
 
+}
+
+.pr-btn:hover {
+    transform: scale(1.06);
 }
 
 
